@@ -789,7 +789,85 @@ button {
 .cleaning-image:hover {
     transform: scale(1.02);
 }
+/* Contact Section Styling */
+.contact-section {
+    background: #f9fafc;
+    padding: 60px 0;
+}
 
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,102,204,0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: #f4f9ff;
+    transform: translateX(10px);
+}
+
+.contact-icon {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.section-title {
+    color: #0066cc;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 15px;
+}
+
+.map-container {
+    height: 97%;
+    min-height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,102,204,0.08);
+}
+.map-responsive {
+    height: 100%;
+    position: relative;
+}
+
+.map-responsive iframe {
+    height: 90%;
+    min-height: 500px;
+    width: 100%;
+    border: 0;
+}
+.opening-hours {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.management-badge {
+    background: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+    display: inline-block;
+}
 .cta-button {
     background: linear-gradient(135deg, #0066cc, #004499);
     padding: 15px 40px;
