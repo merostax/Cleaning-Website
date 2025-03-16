@@ -53,10 +53,10 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
                   <a href="index.html">Home</a>
-                  <a href="services.html">Services</a>
-                  <a href="about.html">About</a>
+                  <a href="services.html">Leistungen</a>
+                  <a href="about.html">Über uns</a>
                   <a href="team.html">Team</a>
-                  <a href="contact.html">Contact Us</a>
+                  <a href="contact.html">Kontakt</a>
                 </div>
               </div>
               <span class="navbar-toggler-icon"></span>
@@ -69,25 +69,226 @@
   </div>
   <!-- header section end -->
   <!-- about section start -->
-  <div class="about_section layout_padding">
+  <!-- About Section -->
+  <div class="about-section layout_padding">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div><img src="images/img-2.png" class="image_2"></div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4">
+          <div class="about-image-container">
+            <img src="images/nbclean-team.jpg"
+                 class="about-image"
+                 alt="NBClean Reinigungsteam bei der Arbeit"
+                 loading="lazy">
+            <div class="experience-badge">
+              <span>15+ Jahre</span>
+              Erfahrung
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <h1 class="services_taital"><span>About </span> <img src="images/icon-1.png"> <span
-              style="color: #1f1f1f">Cleaning</span></h1>
-          <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          </p>
-          <div class="contact_bt_1"><a href="#">READ MORE<span class="contact_padding"><img
-                  src="images/contact-icon1.png"></span></a></div>
+
+        <div class="col-lg-6">
+          <div class="about-content">
+            <h1 class="section-title">
+              <span>Über</span>
+              <img src="images/quality-icon.png" alt="Qualitätssiegel">
+              <span>NBClean</span>
+            </h1>
+
+            <div class="company-intro">
+              <p class="lead-text">
+                Als zertifizierter Reinigungsspezialist mit Sitz in Wolfenbüttel setzen wir seit 2009
+                Maßstäbe in professioneller Gebäudereinigung.
+              </p>
+            </div>
+
+            <div class="key-facts">
+              <div class="fact-card">
+                <img src="images/eco-icon.png" alt="Ökologische Reinigung" class="fact-icon">
+                <h4>100% Ökologisch</h4>
+                <p>Zertifizierte Bio-Reinigungsmittel</p>
+              </div>
+
+              <div class="fact-card">
+                <img src="images/shield-icon.png" alt="Versichert" class="fact-icon">
+                <h4>Voll versichert</h4>
+                <p>Umfassender Versicherungsschutz</p>
+              </div>
+            </div>
+
+            <div class="mission-statement">
+              <h3>Unsere Philosophie</h3>
+              <ul class="mission-list">
+                <li>✓ Fachkompetenz durch geschulte Mitarbeiter</li>
+                <li>✓ Modernste Reinigungstechnologie</li>
+                <li>✓ Individuelle Lösungen für jeden Kunden</li>
+                <li>✓ 24/7 Notdienst verfügbar</li>
+              </ul>
+            </div>
+
+            <div class="cta-button">
+              <a href="contact.html" class="btn-primary">
+                Kostenlose Beratung
+                <img src="images/arrow-icon.png" alt="Pfeil Icon" class="cta-arrow">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company Stats -->
+      <div class="stats-section">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">2.500+</div>
+            <div class="stat-label">Zufriedene Kunden</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Weiterempfehlungsrate</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24h</div>
+            <div class="stat-label">Schnelle Reaktionszeit</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <style>
+    /* About Section Styling */
+    .about-section {
+      background: #fff;
+      padding: 80px 0;
+    }
+
+    .about-image-container {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,102,204,0.1);
+    }
+
+    .about-image {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0066cc;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 30px;
+      text-align: center;
+      font-size: 1.2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .section-title {
+      color: #1a2a4b;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .lead-text {
+      font-size: 1.2rem;
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .key-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .fact-card {
+      background: #f8fbfe;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .fact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,102,204,0.1);
+    }
+
+    .fact-icon {
+      width: 50px;
+      margin-bottom: 15px;
+    }
+
+    .mission-list {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+
+    .mission-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .stats-section {
+      margin-top: 60px;
+      background: #f9fafc;
+      padding: 40px;
+      border-radius: 15px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+
+    .stat-number {
+      color: #0066cc;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0066cc, #004499);
+      color: white !important;
+      padding: 15px 40px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none !important;
+    }
+
+    .cta-arrow {
+      width: 20px;
+      margin-left: 15px;
+      filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 768px) {
+      .about-image {
+        height: 350px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .key-facts {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
   <!-- about section end -->
 
   <!-- Javascript files-->
