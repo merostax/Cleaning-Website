@@ -769,10 +769,98 @@ button {
     float: left;
     padding-top: 40px;
 }
+.image_container {
+    position: relative;
+    margin: 20px 0;
+}
+/* Banner Styling */
+.banner_taital {
+    color: #0066cc;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.cleaning-image {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,102,204,0.2);
+    transition: transform 0.3s ease;
+}
+
+.cleaning-image:hover {
+    transform: scale(1.02);
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #0066cc, #004499);
+    padding: 15px 40px;
+    border-radius: 30px;
+    color: white !important;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-logo {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cta-arrow {
+    width: 25px;
+    margin-left: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.highlight-text {
+    color: #00cc66;
+    font-weight: 700;
+    display: block;
+    margin-top: 15px;
+}
+
+.certified-badge {
+    background: #00cc66;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.image_caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: rgba(0,102,204,0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #0066cc;
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+
+.service-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 .map_main {
+
     width: 100%;
-    float: left;
-    padding-top: 20px;
+
+    margin: 0 auto;
+
+    max-width: 600px; /* or desired max width */
+
+    float: none; /* override the existing float */
+
 }
 .email_text {
     width: 100%;
