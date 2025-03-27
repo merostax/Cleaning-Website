@@ -275,7 +275,7 @@ button {
 .toggle_menu {
     top: 8px;
     position: relative;
-    left: 0px;
+    float: right;
 }
 .shoping_bag {
     float: right;
